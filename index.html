@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Change of Hiroya Fujimiya</title>
+    <style>
+        #more {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<h1 style="text-align: center; color:red;">The Change of Hiroya Fujimiya</h1>
+<p style="text-align: center;">
+    Hiroya Fujimiya used to prefer protecting earth to protecting humans
+    <span id="dots">......</span><span id="more">
+    <br>
+    because he loved nature and animals but hated humans’ hypocrisy, selfishness,
+    and cunningness,
+    <br>
+    yet afterwards he became used to protecting humans and
+    began preferring to protect humans
+    <br>
+    because he found that some of his
+    compatriots like Reiko Yoshii and Gamu Takayama were good and sympathetic,
+    <br>
+    that extraterrestrial enemies were more dangerous than humans,
+    <br>
+    and that the
+    power of Ultraman Agul was used to protect all lives on earth, inclusive of humans.
+
+<button id="myBtn" onclick="toggleText()">Read more</button>
+</p>
+<script>
+    function toggleText() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+
+        // Check if dots are visible, if so, show the "more" text and hide the dots
+        if (dots.style.display === "none") {
+            dots.style.display = "inline"; // Show the dots
+            moreText.style.display = "none"; // Hide the additional content
+            btnText.innerHTML = "Read more"; // Change button text to "Read more"
+        } else {
+            dots.style.display = "none"; // Hide the dots
+            moreText.style.display = "inline"; // Show the additional content
+            btnText.innerHTML = "Read less"; // Change button text to "Read less"
+        }
+    }
+</script>
+<hr>
+<footer style="text-align: center;"> Created by @yantingzhou19990904 on <time style="color:blue;">2025-04-04</time></footer>
+</body>
+</html>
