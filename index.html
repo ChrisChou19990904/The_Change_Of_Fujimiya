@@ -7,6 +7,12 @@
         #more {
             display: none;
         }
+        button {
+            display: inline-block;
+            padding: 5px 5px;
+            font-size: 15px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -28,9 +34,11 @@
     <br>
     and that the
     power of Ultraman Agul was used to protect all lives on earth, inclusive of humans.
+    </span>
 
-<button id="myBtn" onclick="toggleText()">Read more</button>
+    <button id="myBtn" onclick="toggleText()">Read more</button>
 </p>
+
 <script>
     function toggleText() {
         var dots = document.getElementById("dots");
@@ -49,6 +57,7 @@
         }
     }
 </script>
+
 <hr>
 <footer style="text-align: center;"> Created by @yantingzhou19990904 on <time style="color:blue;">2025-04-04</time></footer>
 </body>
