@@ -38,7 +38,19 @@
 
     <button id="myBtn" onclick="toggleText()">Read more</button>
 </p>
+<div id="google_translate_element"></div>
 
+<!-- Google Translate 的自動翻譯功能 -->
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en',  // 頁面原語言
+            includedLanguages: 'en,es,fr,de,it,zh-TW,zh-CN,ja,ko,th,vi,my,id,ms',  // 支援的翻譯語言（可擴展）
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        }, 'google_translate_element');
+    }
+</script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <script>
     function toggleText() {
         var dots = document.getElementById("dots");
